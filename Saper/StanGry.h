@@ -1,7 +1,15 @@
 #pragma once
+#include <vector>
+#include <string>
+struct Decyzja;
+
 class StanGry
 {
 	Plansza* plansza;
+	std::vector<std::string> stan;
+	bool wybuch;
+
+	void OdkryjPole(Decyzja decyzja);
 
 public:
 	StanGry(Plansza* plansza);

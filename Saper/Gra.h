@@ -4,15 +4,17 @@
 
 class Gra
 {
-	Plansza* plansza;
+	Plansza plansza;
+	StanGry stan;
+
 	Gracz* gracz;
 	Wizualizator* wizualizator;
-	StanGry stan;
 
 	bool Koniec();
 	void Krok();
 public:
-	Gra(Plansza *plansza, Gracz *gracz, Wizualizator *wizualizator);
+	Gra(int wysokosc, int szerokosc, int ileMin, 
+		Gracz *gracz, Wizualizator *wizualizator);
 	void Start();
 };
 

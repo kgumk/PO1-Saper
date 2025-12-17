@@ -2,6 +2,6 @@
 class Gracz
 {
 public:
-	virtual Decyzja Decyzja() = 0;
+	virtual struct Decyzja Decyzja() = 0;
 };
 

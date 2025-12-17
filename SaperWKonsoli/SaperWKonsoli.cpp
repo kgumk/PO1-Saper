@@ -5,10 +5,9 @@
 
 int main()
 {
-    Plansza plansza(20, 100, 10);
     GraczWKonsoli gracz;
     WizualizatorWKonsoli wizualizator;
-    Gra gra(&plansza, &gracz, &wizualizator);
+    Gra gra(10, 30, 50, &gracz, &wizualizator);
     gra.Start();
 }
 

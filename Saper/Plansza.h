@@ -12,4 +12,7 @@ public:
 
 	int LiczbaWierszy() { return wysokosc; }
 	int LiczbaKolumn() { return szerokosc; }
+
+	int IleMinDookola(int w, int k);
+	bool CzyMina(int w, int k);
 };

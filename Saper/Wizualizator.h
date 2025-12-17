@@ -1,6 +1,8 @@
 #pragma once
+class StanGry;
+
 class Wizualizator
 {
 public:
-	virtual void Aktualizuj(StanGry *stan) = 0;
+	virtual void Pokaz(StanGry *stan) = 0;
 };

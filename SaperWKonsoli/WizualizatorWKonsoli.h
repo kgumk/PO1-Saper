@@ -5,6 +5,6 @@ class WizualizatorWKonsoli :
     public Wizualizator
 {
 public:
-    void Aktualizuj(StanGry* stan);
+    void Pokaz(StanGry* stan);
 };
 

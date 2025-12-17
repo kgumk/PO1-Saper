@@ -31,3 +31,24 @@ Plansza::~Plansza()
 		delete[] plansza[i];
 	delete[] plansza;
 }
+
+int Plansza::IleMinDookola(int w, int k)
+{
+	int ile = 0;
+	for (int dw = -1; dw <= 1; dw++)
+		for (int dk = -1; dk <= 1; dk++)
+		{
+			if (dw == 0 && dk == 0
+				|| w + dw < 0 || w + dw >= wysokosc
+				|| k + dk < 0 || k + dk >= szerokosc)
+				continue;
+			if (plansza[w + dw][k + dk] == '*')
+				ile++;
+		}
+	return ile;
+}
+
+bool Plansza::CzyMina(int w, int k)
+{
+	return plansza[w][k] == '*';
+}
